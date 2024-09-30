@@ -1,13 +1,14 @@
-```markdown
 # Claudio.js
 
 A lightweight JavaScript library to easily add sound effects to your web elements.
 
+```html
+<div cl-audio="bell.ogg"></div>
+```
+
 ## Demo
 
-```html
-<img id="bell" src="static/svg/bell.svg" cl-audio="bell.ogg">
-```
+See a live demo here.
 
 ## Installation
 
