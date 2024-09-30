@@ -8,7 +8,7 @@ A lightweight JavaScript library to easily add sound effects to your web element
 
 ## Demo
 
-See a live demo here.
+[See a live demo here.](https://1363v4.github.io/claudio/)
 
 ## Installation
 

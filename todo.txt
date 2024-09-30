@@ -1,5 +1,2 @@
-finir piano
-mobile
-upload
 pitch?
 mouseover limitations: https://developer.chrome.com/blog/autoplay?hl=fr
