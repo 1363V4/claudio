@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudio JS</title>
+    <link rel="icon" href="static/svg/bell.svg">
     <link rel="stylesheet" href="static/css/site.css">
     <script src="static/js/claudio.js"></script>
 </head>
@@ -21,24 +22,26 @@
 
 <code>&lt;img src=&quot;bell.svg&quot; cl-audio=&quot;bell.ogg&quot;&gt;</code>
 
-<hr>
-
-<div class="piano">
-    <div class="c" cl-audio="piano_c.ogg" cl-on="pointerdown">C</div>
-    <div class="cd sharp" cl-audio="piano_cd.ogg" cl-on="pointerdown">C#</div>
-    <div class="d" cl-audio="piano_d.ogg" cl-on="pointerdown">D</div>
-    <div class="dd sharp" cl-audio="piano_dd.ogg" cl-on="pointerdown">D#</div>
-    <div class="e" cl-audio="piano_e.ogg" cl-on="pointerdown">E</div>
-    <div class="f" cl-audio="piano_f.ogg" cl-on="pointerdown">F</div>
-    <div class="fd sharp" cl-audio="piano_fd.ogg" cl-on="pointerdown">F#</div>
-    <div class="g" cl-audio="piano_g.ogg" cl-on="pointerdown">G</div>
-    <div class="gd sharp" cl-audio="piano_gd.ogg" cl-on="pointerdown">G#</div>
-    <div class="a" cl-audio="piano_a.ogg" cl-on="pointerdown">A</div>
-    <div class="ad sharp" cl-audio="piano_ad.ogg" cl-on="pointerdown">A#</div>
-    <div class="b" cl-audio="piano_b.ogg" cl-on="pointerdown">B</div>
+<div id="piano_container">
+    <hr>
+    
+    <div class="piano">
+        <div class="c" cl-audio="piano_c.ogg" cl-on="pointerdown">C</div>
+        <div class="cd sharp" cl-audio="piano_cd.ogg" cl-on="pointerdown">C#</div>
+        <div class="d" cl-audio="piano_d.ogg" cl-on="pointerdown">D</div>
+        <div class="dd sharp" cl-audio="piano_dd.ogg" cl-on="pointerdown">D#</div>
+        <div class="e" cl-audio="piano_e.ogg" cl-on="pointerdown">E</div>
+        <div class="f" cl-audio="piano_f.ogg" cl-on="pointerdown">F</div>
+        <div class="fd sharp" cl-audio="piano_fd.ogg" cl-on="pointerdown">F#</div>
+        <div class="g" cl-audio="piano_g.ogg" cl-on="pointerdown">G</div>
+        <div class="gd sharp" cl-audio="piano_gd.ogg" cl-on="pointerdown">G#</div>
+        <div class="a" cl-audio="piano_a.ogg" cl-on="pointerdown">A</div>
+        <div class="ad sharp" cl-audio="piano_ad.ogg" cl-on="pointerdown">A#</div>
+        <div class="b" cl-audio="piano_b.ogg" cl-on="pointerdown">B</div>
+    </div>
+    
+    <code>&lt;div cl-audio=&quot;piano_c.ogg&quot; cl-on=&quot;pointerdown&quot;&gt;C&lt;/div&gt;</code>
 </div>
-
-<code>&lt;div cl-audio=&quot;piano_c.ogg&quot; cl-on=&quot;pointerdown&quot;&gt;C&lt;/div&gt;</code>
 
 <h2>Installation</h2>
 
@@ -63,8 +66,8 @@
 <hr>
 
 <div id="footer">
-    <p>Contribute</p>
-    <a href="https://x.com/merelyacat">by ᓚᘏᗢ</a>
+    <p>Contribute on <a href="https://github.com/1363V4/claudio">Github</a></p>
+    <p>by <a href="https://x.com/merelyacat">ᓚᘏᗢ</a></p>
 </div>
 
 </body>
