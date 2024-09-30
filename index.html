@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudio JS</title>
+    <link rel="stylesheet" href="static/css/site.css">
+    <script src="static/js/claudio.js"></script>
+</head>
+<body>
+
+<h1>Claudio.js</h1>
+
+<p>A lightweight JavaScript library to easily add sound effects to your web elements.</p>
+
+<h2>Demo</h2>
+
+<div class="center">
+    <img id="bell" src="static/svg/bell.svg" cl-audio="bell.ogg">
+</div>
+
+<code>&lt;img src=&quot;bell.svg&quot; cl-audio=&quot;bell.ogg&quot;&gt;</code>
+
+<hr>
+
+<div class="piano">
+    <div class="c" cl-audio="piano_c.ogg" cl-on="pointerdown">C</div>
+    <div class="cd sharp" cl-audio="piano_cd.ogg" cl-on="pointerdown">C#</div>
+    <div class="d" cl-audio="piano_d.ogg" cl-on="pointerdown">D</div>
+    <div class="dd sharp" cl-audio="piano_dd.ogg" cl-on="pointerdown">D#</div>
+    <div class="e" cl-audio="piano_e.ogg" cl-on="pointerdown">E</div>
+    <div class="f" cl-audio="piano_f.ogg" cl-on="pointerdown">F</div>
+    <div class="fd sharp" cl-audio="piano_fd.ogg" cl-on="pointerdown">F#</div>
+    <div class="g" cl-audio="piano_g.ogg" cl-on="pointerdown">G</div>
+    <div class="gd sharp" cl-audio="piano_gd.ogg" cl-on="pointerdown">G#</div>
+    <div class="a" cl-audio="piano_a.ogg" cl-on="pointerdown">A</div>
+    <div class="ad sharp" cl-audio="piano_ad.ogg" cl-on="pointerdown">A#</div>
+    <div class="b" cl-audio="piano_b.ogg" cl-on="pointerdown">B</div>
+</div>
+
+<code>&lt;div cl-audio=&quot;piano_c.ogg&quot; cl-on=&quot;pointerdown&quot;&gt;C&lt;/div&gt;</code>
+
+<h2>Installation</h2>
+
+<p>1. Download the <code>claudio.js</code> file and include it in your project.</p>
+<p>2. Add the following script tag to your HTML file:</p>
+<code>&lt;script src="path/to/claudio.js"&gt;&lt;/script&gt;</code>
+<p>3. Create a folder named <code>claudio</code> inside your static assets directory to store your sound files.</p>
+
+<h2>Usage</h2>
+
+<h3>Attributes</h3>
+
+<p>🎵 <code>a-sound</code>: Specifies the sound file to play.</p>
+<p>🎵 <code>a-on</code>: Defines the event that triggers the sound.</p>
+
+<h3>Syntax</h3>
+
+<p>🎵 <code>soundname:</code> Name of your sound file.</p>
+<p>🎵 <code>event:</code> JavaScript event that triggers the sound. Defaults to click.</p>
+<code>&lt;element a-sound="soundname" a-on="event"&gt;</code>
+
+<hr>
+
+<div id="footer">
+    <p>Contribute</p>
+    <a href="https://x.com/merelyacat">by ᓚᘏᗢ</a>
+</div>
+
+</body>
+</html>
