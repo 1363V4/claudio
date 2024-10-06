@@ -8,9 +8,10 @@ function initializeClaudioElements() {
     const audioElement = createAudioElement(soundAttribute);
     
     const eventAttribute = el.getAttribute('cl-on') || 'click';
+    const repeatAttribute = el.getAttribute('cl-repeat') === 'true';
     
     el.addEventListener(eventAttribute, () => {
-      playSound(audioElement);
+      playSound(audioElement, repeatAttribute);
     });
   });
 }
@@ -21,8 +22,9 @@ function createAudioElement(soundName) {
   return audio;
 }
 
-function playSound(audioElement) {
+function playSound(audioElement, repeat) {
   audioElement.currentTime = 0;
+  audioElement.loop = repeat;
   audioElement.play().catch(error => {
     console.error('Error playing sound:', error);
   });

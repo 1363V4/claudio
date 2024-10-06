@@ -28,7 +28,7 @@
     <div class="piano">
         <div class="c" cl-audio="piano_c.ogg" cl-on="pointerdown">C</div>
         <div class="cd sharp" cl-audio="piano_cd.ogg" cl-on="pointerdown">C#</div>
-        <div class="d" cl-audio="piano_d.ogg" cl-on="pointerdown">D</div>
+        <div class="d" cl-audio="piano_d.ogg" cl-on="pointerdown" cl-repeat="true">D</div>
         <div class="dd sharp" cl-audio="piano_dd.ogg" cl-on="pointerdown">D#</div>
         <div class="e" cl-audio="piano_e.ogg" cl-on="pointerdown">E</div>
         <div class="f" cl-audio="piano_f.ogg" cl-on="pointerdown">F</div>
@@ -54,14 +54,16 @@
 
 <h3>Attributes</h3>
 
-<p>🎵 <code>a-sound</code>: Specifies the sound file to play.</p>
-<p>🎵 <code>a-on</code>: Defines the event that triggers the sound.</p>
+<p>🎵 <code>cl-sound</code>: Specifies the sound file to play.</p>
+<p>🎵 <code>cl-on</code>: Defines the event that triggers the sound. Defaults to click.</p>
+<p>🎵 <code>cl-repeat</code>: Specifies if the sound should loop. Defaults to false.</p>
 
 <h3>Syntax</h3>
 
 <p>🎵 <code>soundname:</code> Name of your sound file.</p>
-<p>🎵 <code>event:</code> JavaScript event that triggers the sound. Defaults to click.</p>
-<code>&lt;element a-sound="soundname" a-on="event"&gt;</code>
+<p>🎵 <code>event:</code> JavaScript event that triggers the sound.</p>
+<p>🎵 <code>repeat:</code> Boolean value.</p>
+<code>&lt;element cl-sound="soundname" cl-on="event" cl-on="repeat"&gt;</code>
 
 <hr>
 
