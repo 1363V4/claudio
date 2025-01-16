@@ -43,6 +43,17 @@
     <code>&lt;div cl-audio=&quot;piano_c.ogg&quot; cl-on=&quot;pointerdown&quot;&gt;C&lt;/div&gt;</code>
 </div>
 
+<hr>
+
+<div class="center">
+    <div id="typewriter">
+        <img src="static/img/typewriter.png">
+        <textarea cl-audio="typewriter.ogg" cl-on="keydown" placeholder="Type something!"></textarea>
+    </div>
+</div>
+
+<code>&lt;textarea cl-audio=&quot;typewriter.ogg&quot; cl-on=&quot;keydown&quot;&gt;&lt;/textarea&gt;</code>
+
 <h2>Installation</h2>
 
 <p>1. Download the <code>claudio.js</code> file and include it in your project.</p>
@@ -55,12 +66,12 @@
 <h3>Attributes</h3>
 
 <p>🎵 <code>cl-sound</code>: Specifies the sound file to play.</p>
-<p>🎵 <code>cl-on</code>: Defines the event that triggers the sound. Defaults to click.</p>
+<p>(optional) 🎵 <code>cl-on</code>: Defines the event that triggers the sound. Defaults to click.</p>
 
 <h3>Syntax</h3>
 
-<p>🎵 <code>soundname:</code> Name of your sound file.</p>
-<p>🎵 <code>event:</code> JavaScript event that triggers the sound.</p>
+<p>🎵 <code>soundname</code>: Name of your sound file.</p>
+<p>(optional) 🎵 <code>event</code>: JavaScript event that triggers the sound.</p>
 <code>&lt;element cl-sound="soundname" cl-on="event"&gt;</code>
 
 <hr>

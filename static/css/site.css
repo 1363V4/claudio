@@ -185,6 +185,36 @@
     .a { grid-area: a; }
     .ad { grid-area: ad; }
     .b { grid-area: b; }
+
+    #typewriter {
+        padding-block: 5rem;
+        display: grid;
+        place-items: center;
+        width: 20rem;
+
+        > * {
+            grid-area: 1 / 1;
+        }
+
+        textarea {
+            position: relative;
+            top: -8.8rem;
+            text-align: center;
+            height: 10rem;
+            width: 15rem;
+            padding: 2%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--color-primary);
+            border-radius: 3px;
+            border-top: 3px solid var(--color-primary);
+            border-left: 2px solid var(--color-primary);
+            border-right: 2px solid var(--color-primary);
+            background-color: rgb(255, 249, 231);
+            mix-blend-mode: multiply;
+            backdrop-filter: blur(5px);
+            outline: none;
+        }
+    }
 }
 
 @layer phone {
