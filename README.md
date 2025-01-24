@@ -8,7 +8,7 @@ A lightweight JavaScript library to easily add sound effects to your web element
 
 ## Demo
 
-[See a live demo here.](https://1363v4.github.io/claudio/)
+[See a live demo here!](https://1363v4.github.io/claudio/)
 
 ## Installation
 
@@ -23,15 +23,15 @@ A lightweight JavaScript library to easily add sound effects to your web element
 
 ### Attributes
 
-🎵 `a-sound`: Specifies the sound file to play.  
-🎵 `a-on`: Defines the event that triggers the sound.
+🎵 `cl-audio`: Specifies the sound file to play.  
+🎵 `cl-on`: Defines the event that triggers the sound.
 
 ### Syntax
 
 🎵 `soundname:` Name of your sound file.  
 🎵 `event:` JavaScript event that triggers the sound. Defaults to click.  
 ```html
-<element a-sound="soundname" a-on="event"></element>
+<element cl-audio="soundname" cl-on="event">
 ```
 
 ---
